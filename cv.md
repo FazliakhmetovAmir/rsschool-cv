@@ -8,8 +8,7 @@
 ## About me
 I studied in Kazan federal university in Fundamental medicine and biology institute. Then I was working as coach in 2016-2020. In 2020 I have opened my oun gym, and I closed it in 2022. Now i start learn programming to become frontend developer.
 
-
-I want to became one of the best specialyst. I hope Rsschool will help me with that. I hope after some time I will get remote job and live my best life.
+I want to became one of the best soft-engenier. I hope Rsschool will help me with that. I hope after some time I will get remote job and live my best life.
 
 ## Skills:
 - HTML
