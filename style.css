@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@300&display=swap');
+
+
+body {
+    max-width: 1400px;
+    box-sizing: border-box;
+}
+.header {
+background-color: gray;
+}
+.header__container {
+    display: flex;
+    padding: 50px 70px;
+    justify-content: space-between; 
+}
+.header__heading-container {
+    
+}
+.header__my-photo {
+    height: 200px;
+    width: 200px;
+    border: 20px solid whitesmoke;
+    border-radius: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.header__heading {
+    font-family: Lora;
+    font-size: 60px;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+.header__heading_second {
+    font-family: Lora;
+    font-size: 40px;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    
+}
+.column-one {
+}
+.column-one__contacts {
+}
+.contacts__list {
+}
+.contacts__item {
+}
+.fa {
+}
+.fa-telegram {
+}
+.fa-github {
+}
+.fa-envelope-o {
+}
+.fa-map-marker {
+}
+.contacts___text {
+}
+.education {
+}
+.education__place {
+}
+.place__number {
+}
+.place_university {
+}
+.skills {
+}
+.skills__list-container {
+}
+.skills__list {
+}
+.list__item {
+}
+.skills__level-list {
+}
+.level-list__item {
+}
+.level-list_level {
+}
+.level {
+}
+.level-grey {
+}
+.languages {
+}
+.languages__list {
+}
+.languages__item {
+}
+.column-two {
+}
+.about {
+}
+.about__text {
+}
+.code {
+}
+.code__ecample {
+}
+.projects {
+}
+.projects__cv {
+}
+.hobby {
+}
+.hobby__list {
+}
+.hobby__item {
+}
+
