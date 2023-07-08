@@ -5,21 +5,25 @@
 body {
     max-width: 1400px;
     box-sizing: border-box;
+    background-color: rgb(172, 173, 174);
 }
 .header {
-background-color: gray;
+    background-color: rgb(91, 104, 60);
 }
 .header__container {
     display: flex;
     padding: 50px 70px;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
 }
 .header__heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     
 }
 .header__my-photo {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border: 20px solid whitesmoke;
     border-radius: 100%;
     vertical-align: middle;
@@ -27,91 +31,197 @@ background-color: gray;
 }
 .header__heading {
     font-family: Lora;
-    font-size: 60px;
+    font-size: 70px;
     color: whitesmoke;
-    margin: 0 auto;
+    margin: 0;
 }
 .header__heading_second {
     font-family: Lora;
-    font-size: 40px;
+    font-size: 25px;
     color: whitesmoke;
-    margin: 0 auto;
+    margin: 0;
 }
 .main {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    font-family: Montserrat;
+}
+p {
+    margin: 0 auto;
 }
 .column-one {
+    margin: 0 40px 0 40px;
+    padding: 10px 50px;
+    width:calc( ( 100% - 40px ) / 2 );
+}
+.line {
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
 }
 .column-one__contacts {
+    margin-bottom: 40px;
 }
 .contacts__list {
+    padding: 0;
+    list-style-type: none;
 }
 .contacts__item {
+    margin-bottom: 10px;
 }
-.fa {
-}
-.fa-telegram {
-}
-.fa-github {
-}
-.fa-envelope-o {
-}
-.fa-map-marker {
+i.fa {
+    font-size: 30px;
+    margin-right: 30px;
+    width: 50px;
+    color: rgb(91, 104, 60);
 }
 .contacts___text {
+    font-family: Montserrat;
+}
+.contacts__link {
+    font-family: Montserrat;
+    color: black;
+
 }
 .education {
 }
 .education__place {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .place__number {
+    font-family: Montserrat;
+    margin-bottom: 5px;
+    background-color: rgb(91, 104, 60);
+    padding: 5px;
+    width: fit-content;
+    display: inline-block;
 }
 .place_university {
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 .skills {
 }
 .skills__list-container {
+    display: flex;
+    flex-direction: row;
 }
 .skills__list {
+    list-style-type: none;
+    padding: 0;
 }
 .list__item {
+    font-family: Montserrat;
+    font-size: 19px;
+    margin-bottom: 5px;
 }
 .skills__level-list {
+    list-style-type: none;
 }
 .level-list__item {
+    list-style-type: none;
+    margin-bottom: 7px;
 }
 .level-list_level {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
 }
 .level {
+  border: 10px solid white;
+  border-radius: 100%;
+  margin-right: 3px;
 }
 .level-grey {
+    border: 10px solid rgb(109, 109, 109);
+    border-radius: 100%;
+    margin-right: 3px;
 }
 .languages {
 }
 .languages__list {
+    list-style-type: none;
 }
 .languages__item {
+    font-family: Montserrat;
+    font-size: 19px;
+    margin-bottom: 5px;
 }
 .column-two {
+    width:calc( ( 100% - 40px ) / 2 );
 }
 .about {
 }
 .about__text {
+    margin: 30px 0 50px 0;
+    font-family: Montserrat;
+    font-size: 18px;
 }
 .code {
 }
-.code__ecample {
+.code__example {
+  font-size: 20px;
+}
+.code__container {
+    background-color: rgb(204, 205, 207);
+    padding: 10px;
+    margin: 30px 0px;
+    width: fit-content;
+    display: inline-block;
 }
 .projects {
 }
 .projects__cv {
+    font-family: Montserrat;
+    font-size: 24px;
+    color: black;
+    background-color: rgb(91, 104, 60);
+    padding: 5px;
+}
+.cv-container {
+    margin: 30px 0;
 }
 .hobby {
 }
 .hobby__list {
+    list-style-type: none;
+    margin-bottom: 7px;
 }
 .hobby__item {
+    font-family: Montserrat;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
 }
+.footer {
+    padding: 20px;
+    background-color: rgb(91, 104, 60);
+}
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+.footer__github {
+    width: 40px;
+    height: 40px;
+}
+i.footer__fa-github {
+    color: white;
+    font-size: 20px;
+    
+}
+.footer__text {
+    font-family: Montserrat;
+    font-size: 24px;
+    color: white;
+}
+.footer__link {
+    width: 30px;
+    height: 30px;
 
+}
