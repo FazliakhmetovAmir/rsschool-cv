@@ -4,6 +4,7 @@
 
 body {
     max-width: 1400px;
+    margin: 0 auto;
     box-sizing: border-box;
     background-color: rgb(172, 173, 174);
 }
@@ -146,6 +147,7 @@ i.fa {
 }
 .languages__list {
     list-style-type: none;
+    padding: 0;
 }
 .languages__item {
     font-family: Montserrat;
@@ -191,6 +193,7 @@ i.fa {
 .hobby__list {
     list-style-type: none;
     margin-bottom: 7px;
+    padding: 0;
 }
 .hobby__item {
     font-family: Montserrat;
@@ -206,22 +209,39 @@ i.fa {
     display: flex;
     justify-content: center;
 }
-.footer__github {
-    width: 40px;
-    height: 40px;
-}
-i.footer__fa-github {
+.github__link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
     color: white;
-    font-size: 20px;
-    
 }
 .footer__text {
     font-family: Montserrat;
     font-size: 24px;
     color: white;
+    margin: 0 50px;
 }
 .footer__link {
-    width: 30px;
-    height: 30px;
-
+    width: 100px;
+    height: auto;   
 }
+@media (max-width: 768px) {
+    .body {
+      width: 100%;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__container {
+        display: flex;
+        padding: 50px 70px;
+        flex-direction: column;
+    }
+    .column-one {
+        margin: 0 40px 0 40px;
+    }
+    .column-two {
+        margin: 0 90px 0 90px;
+    }
+  }
