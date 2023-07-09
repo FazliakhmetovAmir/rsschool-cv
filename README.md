@@ -1,2 +1,2 @@
 https://FazliakhmetovAmir.github.io/rsschool-cv/cv
-https://FazliakhmetovAmir.github.io/rsschool-cv/
+https://fazliakhmetovamir.github.io/rsschool-cv/index.html
