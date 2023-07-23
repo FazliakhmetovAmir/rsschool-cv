@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Library</title>
+    <title>Brooklyn Public Library</title>
+    <link type="Image/x-icon" href="assets/icons/favicon.ico" rel="icon">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="nav">
-            <h3 class="nav__heading">
+            <div>    
+                <h1 class="nav__heading">
                 Brooklyn Public Library
-            </h3>
-            <ul class="nav__list">
-                <li class="nav__list__item"><a href="#about">About</a></li>
-                <li class="nav__list__item"><a href="#favorites">Favorites</a></li>
-                <li class="nav__list__item"><a href="#coffee">Coffee Shop</a></li>
-                <li class="nav__list__item"><a href="#contacts">Contacts</a></li>
-                <li class="nav__list__item"><a href="#library-card">Library Card</a></li>
-            </ul>
-            <img src="assets/icons/nav_ico.png" alt="navigation icon" class="nav__ico">
+                </h1>
+            </div>    
+            <div class="list__container">
+                <ul class="nav__list">
+                <li class="nav__list__item"><a class="nav__list__link" href="#about">About</a></li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#favorites">Favorites</a></li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#coffee">Coffee Shop</a></li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#contacts">Contacts</a></li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#library-card">Library Card</a></li>
+                </ul>
+                <img src="assets/icons/nav_ico.svg" alt="navigation icon" class="nav__ico">
+            </div>
         </nav>
         <div class="welcome-page">
-            <h1 class="welcome_page__heading">Welcome 
-                to the Brooklyn Library</h1>
         </div>
     </header>
     <main>
-        <section class="about" id="about">
+        <section class="about" >
             <h2 class="about__heading section__heading">
                 About
             </h2>
@@ -42,9 +44,9 @@
                 <img src="assets/images/image 3.png" alt="About library" class="about__image">
             </div>
             <ul class="about__list">
-                <li class="about__list__item about__list__item__brow"></li>
-                <li class="about__list__item about__list__item__grey"></li>
-                <li class="about__list__item about__list__item__grey"></li>
+                <li class="about__list__item"></li>
+                <li class="about__list__item"></li>
+                <li class="about__list__item"></li>
             </ul>
         </section>
         <section class="favorites" id="favorites">
@@ -55,7 +57,7 @@
             </div>
             <div class="fovorites__input-container">
                 <p class="favorites__input__text">
-                    Pick favorites of season
+                    <strong>Pick favorites of season </strong>
                 </p>
                 <input type="radio" id="season-choise1" name="season" value="Winter">
                 <label for="season-choise1" class="input__lable">Winter</label>
@@ -117,7 +119,7 @@
                             The Last Queen<br>By Clive Irving
                         </p>
                         <p class="card__book-description">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
-                        <button class="card__button">Own</button>
+                        <button disabled="disabled" class="card__button-disabled">Own</button>
                     </div>
                     <div class="card_book-image">
                         <img src="assets/images/favorities/book4.png" alt="book image">
@@ -138,34 +140,58 @@
                     <h2 class="drinks__heading">Coffee & Tea</h2>
                     <ul class="drinks__price">
                         <li class="drinks__price__item">
-                            <p class="item__name">Cold Brew Coffee</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$3</p>
+                            <div>
+                                <p class="item__name">Cold Brew Coffee</p>
+                            </div>
+                            <div class="line-price">
+                                <div class="item_line"></div>
+                                <p class="item__price">$3</p>
+                            </div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">French Press Pot</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$5</p>
+                            <div>
+                                <p class="item__name">French Press Pot</p>
+                            </div>
+                            <div class="line-price">
+                                <div class="item_line"></div>
+                                <p class="item__price">$5</p>
+                            </div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Espresso</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$2</p>
+                            <div>
+                                <p class="item__name">Espresso</p>
+                            </div>
+                            <div class="line-price">
+                                <div class="item_line"></div>
+                                <p class="item__price">$2</p>
+                            </div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Cappuccino</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$4</p>
+                            <div>
+                                <p class="item__name">Cappuccino</p>
+                            </div>
+                            <div class="line-price">
+                                <div class="item_line"></div>
+                                <p class="item__price">$4</p>
+                            </div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Hot tea</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$2</p>
+                            <div>
+                                <p class="item__name">Hot tea</p>
+                            </div>
+                            <div class="line-price">
+                                <div class="item_line"></div>
+                                <p class="item__price">$2</p>
+                            </div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Cold tea</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$2</p>
+                            <div>
+                                <p class="item__name">Cold tea</p>
+                            </div>
+                            <div class="line-price">
+                                <div class="item_line"></div>
+                                <p class="item__price">$2</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -173,34 +199,58 @@
                     <h2 class="drinks__heading">Forest Gateau</h2>
                     <ul class="drinks__price">
                         <li class="drinks__price__item">
-                            <p class="item__name">Cold Brew Coffee</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$16</p>
+                            <div>
+                                <p class="item__name">Cold Brew Coffee</p>
+                            </div>
+                            <div class="line-price"> <div
+                                 class="item_line"></div>
+                                <p class="item__price">$16</p
+                                ></div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Blue Moon</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$16</p>
+                            <div>
+                                <p class="item__name">Blue Moon</p>
+                            </div>
+                            <div class="line-price"> <div
+                                 class="item_line"></div>
+                                <p class="item__price">$16</p
+                                ></div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Truffle Cake</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$15</p>
+                            <div>
+                                <p class="item__name">Truffle Cake</p>
+                            </div>
+                            <div class="line-price"> <div
+                                 class="item_line"></div>
+                                <p class="item__price">$15</p
+                                ></div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Chocolate Cake</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$18</p>
+                            <div>
+                                <p class="item__name">Chocolate Cake</p>
+                            </div>
+                            <div class="line-price"> <div
+                                 class="item_line"></div>
+                                <p class="item__price">$18</p
+                                ></div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Poet&#39;s Dream Cake</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$16</p>
+                            <div>
+                                <p class="item__name">Poet&#39;s Dream Cake</p>
+                            </div>
+                            <div class="line-price"> <div
+                                 class="item_line"></div>
+                                <p class="item__price">$16</p
+                                ></div>
                         </li>
                         <li class="drinks__price__item">
-                            <p class="item__name">Pineapple Cake</p>
-                            <div class="item_line"></div>
-                            <p class="item__price">$14</p>
+                            <div>
+                                <p class="item__name">Pineapple Cake</p>
+                            </div>
+                            <div class="line-price"> <div
+                                 class="item_line"></div>
+                                <p class="item__price">$14</p
+                                ></div>
                         </li>
                     </ul>
                 </div>
@@ -208,18 +258,18 @@
         </section>
         <section class="contacts" id="contacts">
             <h2 class="contacts__heading section__heading">
-                Favorites
+                Our Contacts
             </h2>
             <div class="section__line">
             </div>
             <div class="contacts__container">
                 <div class="contacts__info">
                     <p class="contact__text">
-                        <strong>all Library inquiries:</strong><br><br>
+                        <strong>For all Library inquiries:</strong><br><br>
                         Please call <a href="tel:+6177302370" class="tel">(617) 730-2370</a><br>
                         For TTY service, please call <a href="tel:+6177302370" class="tel">(617) 730-2370</a><br>
                         Putterham Library: <a href="+6177302385" class="tel">(617) 730-2385</a><br><br>
-                        <strong>Staff</strong><br><br>
+                        <strong>Senior Staff</strong><br><br>
                         Library Director: <a href="mailto:amahda@hirst.com" class="mailto">Amanda Hirst</a>
                     </p>
                 </div>
@@ -243,8 +293,10 @@
                             <input type="text" class="input__name" id="input__name" name="name" placeholder="Reader's name">
                             <input type="text" class="input__name" id="input__card-number" name="card-number" placeholder="Card number">
                         </div>
-                        <div class="find-card__button">
-                            <input type="button">
+                        <div >
+                            <button class="find-card__button" type="button">
+                            Check the card
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -258,13 +310,15 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer class="footer">
             <div class="footer-info">
                 <div class="footer-info__links">
                     <a href="https://goo.gl/maps/qmRBiSicAq4kWYy39" class="footer-info__adress">286 Cadman Plaza, New York, NY 11238, United States</a>
-                    <i class="fa fa-twitter" aria-hidden="true"><a href="https://twitter.com"></a></i>
-                    <i class="fa fa-instagram" aria-hidden="true"><a href="https://instagram.com"></a></i>
-                    <i class="fa fa-facebook" aria-hidden="true"><a href="https://facebook.com"></a></i>
+                    <div class="footer__ico">
+                        <a href="#" class="ico__link"><img src="/assets/icons/twitter.svg" alt="twitter icon" class="ico__item"></a>
+                        <a href="#" class="ico__link"><img src="/assets/icons/instagram.svg" alt="twitter icon" class="ico__item"></a>
+                        <a href="#" class="ico__link"><img src="/assets/icons/facebook.svg" alt="twitter icon" class="ico__item"></a>
+                    </div>
                 </div>
                 <div class="footer-info__schedule">
                     <p class="schedule__text">Mon - Fri<br>
@@ -276,7 +330,7 @@
             <div class="footer-line"></div>
             <div class="footer-author">
                 <p class="footer-author__date">2023</p>
-                <p class="footer-author__date">The Rolling Scopes School</p>
+                <a href="https://rs.school/js-stage0/" class="footer-author__date__link">The Rolling Scopes School</a>
                 <a href="https://github.com/FazliakhmetovAmir" class="footer-author__github">FazliakhmetovAmir</a>
             </div>
         </footer>
